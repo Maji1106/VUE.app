@@ -24,8 +24,8 @@ jobs:
       - name: Build and push Docker image
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: VUE.app # ไม่ต้องใส่ naruapon ซ้ำ
-          registry: ghcr.io/Maji1106
+          image: yue.app # ไม่ต้องใส่ naruapon ซ้ำ
+          registry: ghcr.io/maji1106
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           tags: ${{ env.TAG_NAME }}, latest
